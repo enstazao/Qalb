@@ -1,0 +1,53 @@
+# Credentials and local configuration
+.env
+.env.*
+.ssh/
+.aws/
+.huggingface/
+credentials.json
+service-account*.json
+*.pem
+*.key
+
+# Datasets, weights, checkpoints, and tokenizer snapshots
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.gguf
+*.npy
+*.npz
+*.parquet
+*.arrow
+local_tokenizer/
+urdu_data/
+llama31_8b_mixed_tokens/
+checkpoints/
+checkpoint-*/
+outputs_urdu_cpt/
+urdu_cpt_lora/
+urdu_cpt_merged_16bit/
+
+# Run artifacts
+training_logs.csv
+runs/
+tb_logs/
+generations/
+events.out.tfevents.*
+*.log
+environment.lock.txt
+unsloth_compiled_cache/
+unsloth_offloaded_gradient_checkpoint/
+
+# Python, notebooks, and development tools
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.cache/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store

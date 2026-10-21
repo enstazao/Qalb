@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use Qalb or this CPT code, please cite the accompanying paper."
+title: "Qalb-1.0: Urdu Large Language Model — CPT Implementations"
+type: software
+authors:
+  - family-names: Hassan
+    given-names: Muhammad Taimoor
+  - family-names: Ahmed
+    given-names: Jawad
+  - family-names: Awais
+    given-names: Muhammad
+license: Apache-2.0
+url: "https://huggingface.co/enstazao/Qalb-1.0-8B-Instruct"
+preferred-citation:
+  type: article
+  title: "Qalb: Largest State-of-the-Art Urdu Large Language Model for 230M Speakers with Systematic Continued Pre-training"
+  authors:
+    - family-names: Hassan
+      given-names: Muhammad Taimoor
+    - family-names: Ahmed
+      given-names: Jawad
+    - family-names: Awais
+      given-names: Muhammad
+  year: 2026
+  journal: arXiv
+  doi: "10.48550/arXiv.2601.08141"
+  url: "https://arxiv.org/abs/2601.08141"
