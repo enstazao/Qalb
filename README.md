@@ -2,7 +2,7 @@
 
 **An Urdu large language model built with Llama 3.1 8B.**
 
-[Paper](https://arxiv.org/abs/2601.08141) · [Hugging Face model](https://huggingface.co/enstazao/Qalb-1.0-8B-Instruct) · [Training details](docs/training_details.md) · [Presentation](presentation/qalb.html) · [Apache 2.0 code license](LICENSE)
+[Paper](https://arxiv.org/abs/2601.08141) · [Hugging Face model](https://huggingface.co/enstazao/Qalb-1.0-8B-Instruct) · [Presentation](presentation/qalb.html)
 
 Qalb adapts an existing language model to Urdu through **continued pre-training (CPT)** followed by **supervised fine-tuning (SFT)**. This repository provides two author-supplied CPT implementations, their configurations, and practical documentation for research use. The released instruction model is available on Hugging Face.
 
