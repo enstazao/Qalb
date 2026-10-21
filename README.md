@@ -2,7 +2,7 @@
 
 **An Urdu large language model built with Llama 3.1 8B.**
 
-[Paper](https://arxiv.org/abs/2601.08141) · [Hugging Face model](https://huggingface.co/enstazao/Qalb-1.0-8B-Instruct) · [Training details](docs/training_details.md) · [Apache 2.0 code license](LICENSE)
+[Paper](https://arxiv.org/abs/2601.08141) · [Hugging Face model](https://huggingface.co/enstazao/Qalb-1.0-8B-Instruct) · [Training details](docs/training_details.md) · [Presentation](presentation/qalb.html) · [Apache 2.0 code license](LICENSE)
 
 Qalb adapts an existing language model to Urdu through **continued pre-training (CPT)** followed by **supervised fine-tuning (SFT)**. This repository provides two author-supplied CPT implementations, their configurations, and practical documentation for research use. The released instruction model is available on Hugging Face.
 
@@ -39,9 +39,13 @@ Qalb-1.0/
 │   ├── cpt_train.py
 │   └── experiments/
 │       └── cpt_experiments.ipynb
+├── presentation/
+│   └── qalb.html
 └── docs/
     └── training_details.md
 ```
+
+The standalone [presentation](presentation/qalb.html) is included with the repository. Open it in a browser; use the arrow keys or Space to navigate.
 
 ## Two CPT implementations
 
@@ -81,7 +85,7 @@ python -m pip check
 python -c "import torch; print(torch.__version__, torch.version.cuda); print('CUDA:', torch.cuda.is_available())"
 ```
 
-The pinned Torch 2.6.0 Linux wheels use CUDA 12.4 dependencies; the GPU driver must support that runtime. The pins are a **reconstructed candidate environment**, not a recovered historical lockfile. Key API sources and dependency metadata were reviewed, but CUDA installation and training have not been tested here. Transitive dependencies are not fully locked. See [compatibility notes](docs/training_details.md#dependency-and-api-review) before changing versions.
+The pinned Torch 2.6.0 Linux wheels use CUDA 12.4 dependencies; the GPU driver must support that runtime. The pins are a **reconstructed candidate environment**, not a recovered historical lockfile. Key API sources and dependency metadata were reviewed, but CUDA installation and training have not been tested here. Transitive dependencies are not fully locked. See [training details](docs/training_details.md) before changing versions.
 
 Authenticate using `HF_TOKEN` supplied through your environment or a secret manager. For an interactive terminal without putting the token in shell history:
 
